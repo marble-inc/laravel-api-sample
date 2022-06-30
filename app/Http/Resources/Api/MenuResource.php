@@ -4,7 +4,7 @@ namespace App\Http\Resources\Api;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ShopResource extends JsonResource
+class MenuResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -18,7 +18,7 @@ class ShopResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'introduction' => $this->introduction,
-            'menus' => MenuResource::collection($this->menus),
+            'price' => $this->price,
         ];
     }
 }
