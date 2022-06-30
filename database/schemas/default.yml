@@ -1,0 +1,26 @@
+shops:
+  columns:
+    id: true
+    name: string
+    introduction:
+      type: text
+      nullable: true
+    timestamps: true
+
+menus:
+  columns:
+    id: true
+    shop_id: unsignedBigInteger
+    name: string
+    introduction:
+      type: text
+      nullable: true
+    price: integer
+    cost: integer
+    timestamps: true
+  foreign_keys:
+    - columns: [shop_id]
+      references: [id]
+      table: shops
+      onUpdateAction: cascade
+      onDeleteAction: cascade
