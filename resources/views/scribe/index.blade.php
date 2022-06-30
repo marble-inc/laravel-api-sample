@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var baseUrl = "http://laravel-api-sample.test";
+        var baseUrl = "http://localhost";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -113,7 +113,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">http://laravel-api-sample.test</code></pre>
+<pre><code class="language-yaml">http://localhost</code></pre>
 
         <h1 id="authenticating-requests">Authenticating requests</h1>
 <p>This API is not authenticated.</p>
@@ -127,7 +127,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <p>
 </p>
 
-
+<p>同時にメニュー情報も付属します。</p>
 
 <span id="example-requests-GETapi-shops">
 <blockquote>Example request:</blockquote>
@@ -135,14 +135,14 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://laravel-api-sample.test/api/shops" \
+    --get "http://localhost/api/shops" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api-sample.test/api/shops"
+    "http://localhost/api/shops"
 );
 
 const headers = {
@@ -166,40 +166,40 @@ fetch(url, {
 <code class="language-json">{
     &quot;data&quot;: [
         {
-            &quot;name&quot;: &quot;浜田 幹&quot;,
-            &quot;introduction&quot;: &quot;れませんでしたから元気をつぶにも四方になんか殺ころがりました。「博士はかするように決心けっしんじを次つぎのような顔を引っ込こまればいだいものでした。それをもらいます。きっと向むこうか」さっきからそっちへいせいの隅すみました。けどいらっところになって。きっとたんぶんばんをはじめました。そしてしまうかな野原のはらが、なぜ燈台看守とうに流ながら、その大きく写うつってるからでした。「かさんいろの天気輪て。&quot;,
-            &quot;updated_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;小泉 真綾&quot;,
+            &quot;introduction&quot;: &quot;びの声だった大きく、さっきょう。ここ天上なんの蛍烏賊ほたるのだ。あ、それはべつの街燈がいましたというの下を、しずみませんでしょう」カムパネルラもまた向むこうとう」ジョバンニはいかんぱいにジョバンニは、どころをひき姉あねは前の方を見てくれなんとしてよこめてで膝ひざもあやしい人の知らせて盤ばんの神かみさまのように、くるくてに落おちてしまいま苹果りんこうの。ああぼく飛とびだした。そしていたので、その流。&quot;,
+            &quot;updated_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+            &quot;id&quot;: 19,
             &quot;menus&quot;: [
                 {
-                    &quot;id&quot;: 3,
-                    &quot;shop_id&quot;: 5,
-                    &quot;name&quot;: &quot;石田 康弘&quot;,
-                    &quot;introduction&quot;: &quot;気けい、それもいた着物きものを待まちましたら、まもなって、めいきおぼつかな銀河ぎんやり白い荷物にもあたしはじめておいのるようにとなり、黄いおうのほんとうの柵さくなってそれはだしだの今だったのでした。ジョバンニが窓まどを見ながらたくさんか授業じゅうになら、ジョバンニはすったような、あの十字サウザンクル、スコップで走る汽車もうまるで毎日注文ちゅう川へ帰らずの鳥捕とりとまったみじかの来るわ」向むきもの。&quot;,
-                    &quot;price&quot;: 84785065,
-                    &quot;cost&quot;: 848647380,
-                    &quot;created_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;
+                    &quot;id&quot;: 17,
+                    &quot;shop_id&quot;: 19,
+                    &quot;name&quot;: &quot;山岸 裕美子&quot;,
+                    &quot;introduction&quot;: &quot;「僕ぼくいろいろお仕事しごとがってしかに微笑わらい、ほんじょうど本にあかり汽車は、まるで鉄砲丸てったろうとしました。「なんぞで、檜ひのきの音のために、少した。まっ黒に立っていました。そして何をしらとちょうてを顔にあてて流ながら訊きこえました。ジョバンニさんかしました。その中でと胸むねをお持もちながら上着うわぎが来るのでした。あすこしが、なぜ燈台看守とうはちょうさっきのように見入り乱みだが、草をか。&quot;,
+                    &quot;price&quot;: 298465581,
+                    &quot;cost&quot;: 650,
+                    &quot;created_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;
                 }
             ]
         },
         {
-            &quot;name&quot;: &quot;西之園 幹&quot;,
-            &quot;introduction&quot;: &quot;室ひょうこもいながれたまま胸むねばかりたいどこから」ジョバンニは」］窓まどの遠いもりは、てんじゃなく二つある。流ながれてありました。それを二つの街燈がいちは、白い巾きれいでね、川原ですか。カムパネルラだ。いました。けれどもまた鳥を捕とりとりとりになっていたのです。ジョバンニもカムパネルラは、つや楢ならん、だまっすぐに答えていくつないそよぎ、ジョバンニはもう涼すずしくみんなに三、四日うずんずる人た。&quot;,
-            &quot;updated_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;西之園 真綾&quot;,
+            &quot;introduction&quot;: &quot;だ黒い服ふくに見えたような二つの緑みどりやろうかと思いままでも思いましたんでいる。お前は夢ゆめをさまよ」と言いわの上を通り、まぶしそうに、ぬれたようの木のようにその歌うよ。ね、ずうっと助たすか」「うんだかそうじゃなくそうにそよぎ、その歌う声や口笛くちびるのです。水も&hellip;&hellip;」「蠍さそりのあると鷺さぎです。米だっていました。「ああ、十日もつをはじめていました。「ほんもかけたのさい」「僕ぼくなっているか。&quot;,
+            &quot;updated_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+            &quot;id&quot;: 20,
             &quot;menus&quot;: [
                 {
-                    &quot;id&quot;: 4,
-                    &quot;shop_id&quot;: 6,
-                    &quot;name&quot;: &quot;三宅 太郎&quot;,
-                    &quot;introduction&quot;: &quot;つつんだん気をつくしい美うつくように、この本のあたしばらく木のあるようなしいセロのよういました。ごと汽車の正面しょうやのもののひとにほねはおはなぜ手数てすました。そのきれいなベンチも置おきますと汽車に乗のって見ました苹果りんごをひたいと思ってまって、すぐに進すすみの御前みました。するというように、もう、けむるようになって、それから、その正面しょう」さっきりんごくへ行ったように見えませんかね、天の。&quot;,
-                    &quot;price&quot;: 48403826,
-                    &quot;cost&quot;: 4806651,
-                    &quot;created_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2022-06-30T05:25:57.000000Z&quot;
+                    &quot;id&quot;: 18,
+                    &quot;shop_id&quot;: 20,
+                    &quot;name&quot;: &quot;笹田 康弘&quot;,
+                    &quot;introduction&quot;: &quot;たのかとしていしょうのためなのでした。そしてこの上を鳴らしくありました。「ほんの旗はたをながら、ごとがったねさえ播まけばひとたべてみて、だまった」「標本室ひょうだいちのいちの岸きしをかけたりしながら、耳をするというようにまるで一つました。「今晩こんばしらべるもんで光って床ゆかへ行くのとき、丘おかしやだわ」女の子はびっくらい。こいつかれている、そうじきもちゃんとうにぼんやりかえておいが鉄砲丸てって。&quot;,
+                    &quot;price&quot;: 81,
+                    &quot;cost&quot;: 2,
+                    &quot;created_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2022-06-30T06:10:24.000000Z&quot;
                 }
             ]
         }
@@ -265,14 +265,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://laravel-api-sample.test/api/user" \
+    --get "http://localhost/api/user" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://laravel-api-sample.test/api/user"
+    "http://localhost/api/user"
 );
 
 const headers = {

@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('shops', [\App\Http\Controllers\Api\ShopController::class, 'index'])->name('shops.index');
